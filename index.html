@@ -13,14 +13,25 @@
 
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <style>
+ <style>
     body{
-      background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  </style>
+  margin:0;
+  min-height:100vh;
+  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* overlay */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  z-index:-1;
+}
+</style>
 </head>
 
 <body class="bgColor" style="background-color: black">
@@ -81,3 +92,6 @@
 
 </body>
 </html>
+
+
+
